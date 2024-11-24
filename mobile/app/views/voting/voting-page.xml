@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="E-Voting" class="action-bar">
+        <NavigationButton visibility="collapsed"/>
+        <ActionBar.titleView>
+            <Label text="E-Voting" class="action-bar-title"/>
+        </ActionBar.titleView>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout class="card">
+            <Label text="City Council Election 2024" class="font-bold text-xl"/>
+            <Label text="Cast your vote for the next city council representative" textWrap="true" class="text-gray-600 m-y-8"/>
+
+            <StackLayout class="m-y-16">
+                <RadioButton text="John Smith" checked="{{ selectedCandidate === 'John Smith' }}" />
+                <RadioButton text="Sarah Johnson" checked="{{ selectedCandidate === 'Sarah Johnson' }}" />
+                <RadioButton text="Michael Brown" checked="{{ selectedCandidate === 'Michael Brown' }}" />
+                <RadioButton text="Emily Davis" checked="{{ selectedCandidate === 'Emily Davis' }}" />
+            </StackLayout>
+
+            <Button text="Cast Vote" tap="{{ onVote }}" class="btn btn-primary" isEnabled="{{ selectedCandidate !== null }}"/>
+
+            <StackLayout class="alert alert-info m-t-16">
+                <Label text="Important Information" class="font-bold"/>
+                <Label text="• Your vote is completely anonymous" textWrap="true"/>
+                <Label text="• You can only vote once in this election" textWrap="true"/>
+                <Label text="• Results will be published after the voting period ends" textWrap="true"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

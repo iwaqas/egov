@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabView androidTabsPosition="bottom" selectedTabTextColor="#4f46e5" class="tab-view">
+    <TabView.items>
+        <TabViewItem title="Dashboard" iconSource="res://chart">
+            <Frame defaultPage="views/dashboard/dashboard-page"></Frame>
+        </TabViewItem>
+        <TabViewItem title="Vote" iconSource="res://vote">
+            <Frame defaultPage="views/voting/voting-page"></Frame>
+        </TabViewItem>
+        <TabViewItem title="Feedback" iconSource="res://message">
+            <Frame defaultPage="views/feedback/feedback-page"></Frame>
+        </TabViewItem>
+        <TabViewItem title="Profile" iconSource="res://user">
+            <Frame defaultPage="views/profile/profile-page"></Frame>
+        </TabViewItem>
+    </TabView.items>
+</TabView>

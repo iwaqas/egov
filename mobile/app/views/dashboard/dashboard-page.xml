@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Dashboard" class="action-bar">
+        <NavigationButton visibility="collapsed"/>
+        <ActionBar.titleView>
+            <Label text="Dashboard" class="action-bar-title"/>
+        </ActionBar.titleView>
+    </ActionBar>
+
+    <ScrollView>
+        <StackLayout>
+            <GridLayout columns="*, *" rows="auto, auto" class="m-8">
+                <StackLayout col="0" row="0" class="card">
+                    <Label text="Total Users" class="text-gray-600"/>
+                    <Label text="124,892" class="font-bold text-xl"/>
+                    <Label text="+12.5%" class="text-green-600"/>
+                </StackLayout>
+                
+                <StackLayout col="1" row="0" class="card">
+                    <Label text="Active Polls" class="text-gray-600"/>
+                    <Label text="23" class="font-bold text-xl"/>
+                    <Label text="+3" class="text-green-600"/>
+                </StackLayout>
+
+                <StackLayout col="0" row="1" class="card">
+                    <Label text="Feedback" class="text-gray-600"/>
+                    <Label text="8,432" class="font-bold text-xl"/>
+                    <Label text="+892" class="text-green-600"/>
+                </StackLayout>
+
+                <StackLayout col="1" row="1" class="card">
+                    <Label text="Approval" class="text-gray-600"/>
+                    <Label text="87%" class="font-bold text-xl"/>
+                    <Label text="+2.4%" class="text-green-600"/>
+                </StackLayout>
+            </GridLayout>
+
+            <StackLayout class="card">
+                <Label text="Voting Trends" class="font-bold text-xl m-b-8"/>
+                <!-- Chart will be implemented using a native chart component -->
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
