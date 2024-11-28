@@ -1,4 +1,4 @@
-A bolt.new generated project
+A bolt.new generated project: Requires Vite + React + TS
 ![image](https://github.com/user-attachments/assets/5aeb98c8-afdf-4c1d-8efd-bf9c4759c277)
 
 Here is the prompt
